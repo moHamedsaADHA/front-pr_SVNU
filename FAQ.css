@@ -1,0 +1,132 @@
+body {
+    background-color: #efebaa;
+    margin: 0 220px 65px 220px;
+    color: #3E2723;
+}
+
+a {
+    color: #5e441d;
+}
+
+#goUpBtn {
+    position: fixed;
+    top: 10px;
+    left: 30px;
+    display: none;
+    background-color: #5e441d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#goUpBtn:hover {
+    background-color: #3E2723;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+h3,
+h4 {
+    color: #5e441d;
+}
+
+#index_page p a {
+    display: block;
+    color: #3E2723;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 35px 0 10px 0;
+}
+
+.lists a {
+    display: block;
+    color: #5e441d;
+    text-decoration: none;
+    margin: 15px;
+
+}
+
+.lists {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+#content_page p {
+    color: #5e441d;
+}
+
+.paragraphs {
+    margin: 50px 0 10px 0;
+}
+
+#sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 60px;
+    height: calc(100vh - 60px);
+    background: #5e441d;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+#sidebar:hover {
+    width: 200px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+#sidebar ul li:hover {
+    background: #3E2723;
+}
+
+#sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar ul li i {
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#sidebar ul li i:hover {
+    color: chocolate;
+    transform: scale(1.2);
+}
+
+#sidebar ul li span {
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, margin-left 0.3s;
+    margin-left: 0;
+}
+
+#sidebar:hover ul li span {
+    opacity: 1;
+    margin-left: 10px;
+}

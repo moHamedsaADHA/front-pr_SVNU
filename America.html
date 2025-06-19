@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 id="dynamic-text">Trending</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search For Book...">
+            <button>
+             <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="search">
+            </button>
+        </div>
+        <!-- دايرة الأعلام -->
+        <div class="flag-container">
+            <div class="flag-toggle">US</div>
+            <div class="flag-menu">
+                <a href="Egypt.html">
+                    <img src="https://flagcdn.com/w40/eg.png" alt="Egypt">
+                </a>
+                <a href="America.html">
+                    <img src="https://flagcdn.com/w40/us.png" alt="America">
+                </a>
+                <a href="France.html">
+                    <img src="https://flagcdn.com/w40/fr.png" alt="France">
+                </a>
+                <a href="Germany.html">
+                    <img src="https://flagcdn.com/w40/de.png" alt="Germany">
+                </a>
+            </div>
+    </header>
+    <!-- منطقة Trigger صغيرة على الشمال -->
+    <div id="trigger"></div>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li><i class="fas fa-home"></i> <a href="./Home.html">Home</a></li>
+            <li><i class="fas fa-fire"></i> <a href="#">Trending</a></li>
+            <li><i class="fas fa-book"></i> <a href="#">Library</a></li>
+            <li><i class="fas fa-layer-group"></i> <a href="#">Categories</a></li>
+            <li><i class="fas fa-user"></i> <a href="#">Profile</a></li>
+            <li><i class="fas fa-cog"></i> <a href="#">Settings</a></li>
+            <li><i class="fa-solid fa-question-circle"></i><a href="#"> Q&A</a></i>
+                </i>
+            </li>
+            <li><i class="fas fa-sign-out-alt"></i> <a href="#" id="logout">Logout</a></li>
+        </ul>
+    </div>
+    <main>
+        <div class="book-grid">
+            <!-- بطاقة كتاب 1 -->
+            <div class="book-card">
+                <div class="book-image-container">
+                    <a href="https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird" target="_blank">
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg" alt="To Kill a Mockingbird" class="book-image">
+                    </a>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">To Kill a Mockingbird</h3>
+                    <p class="book-author">Harper Lee</p>
+                    <div class="book-rating">
+                        <div class="stars-container">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <span class="rating-number">4.26</span>
+                    </div>
+                </div>
+            </div>
+            <!-- بطاقة كتاب 2 -->
+            <div class="book-card">
+                <div class="book-image-container">
+                    <a href="https://www.goodreads.com/book/show/4671.The_Great_Gatsby" target="_blank">
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1738790966i/4671.jpg" alt="The Great Gatsby" class="book-image">
+                    </a>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">The Great Gatsby</h3>
+                    <p class="book-author">F. Scott Fitzgerald</p>
+                    <div class="book-rating">
+                        <div class="stars-container">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star half-filled">★</span>
+                        </div>
+                        <span class="rating-number">3.93</span>
+                    </div>
+                </div>
+            </div>
+            <!-- بطاقة كتاب 3 -->
+            <div class="book-card">
+                <div class="book-image-container">
+                    <a href="https://www.goodreads.com/book/show/5107.The_Catcher_in_the_Rye" target="_blank">
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg" alt="The Catcher in the Rye" class="book-image">
+                    </a>
+
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">The Catcher in the Rye</h3>
+                    <p class="book-author">J.D. Salinger</p>
+                    <div class="book-rating">
+                        <div class="stars-container">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star empty">★</span>
+                            <span class="star empty">★</span>
+                        </div>
+                        <span class="rating-number">3.80</span>
+                    </div>
+                </div>
+            </div>
+            <!-- بطاقة كتاب 4 -->
+            <div class="book-card">
+                <div class="book-image-container">
+                    <a href="https://www.goodreads.com/book/show/6149.Beloved" target="_blank">
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1722944318i/6149.jpg" alt="Beloved" class="book-image">
+                    </a>
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">Beloved</h3>
+                    <p class="book-author">Toni Morrison</p>
+                    <div class="book-rating">
+                        <div class="stars-container">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <span class="rating-number">3.97</span>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Digital Library</h3>
+                    <p class="footer-description">Your favorite site to explore new books and classics in various fields.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <!-- <li><a href="#" class="footer-link">Home</a></li> -->
+                        <li><a href="#" class="footer-link">Browse books</a></li>
+                        <li><a href="#" class="footer-link">Special Offers</a></li>
+                        <li><a href="#" class="footer-link">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Follow us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+                        </a>
+                    </div>
+
+                    <div class="newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Newsletter Email">
+                            <button type="submit" class="newsletter-button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Digital Library - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./java.js"></script>
+</body>
+
+</html>
