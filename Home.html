@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="./photos/fav.ico">
+    <title>RFOUF</title>
+    <link rel="stylesheet" href="./Home.css">
+
+</head>
+
+<body>
+    <header>
+
+        <h1 id="dynamic-text">Digital Library</h1>
+        <div id="search-container">
+            <i id="search-icon" class="fas fa-search"></i>
+            <input type="text" id="search-box" placeholder="Search For Book..." onfocus="this.placeholder=''"
+                onblur="this.placeholder='Search For Book...'">
+        </div>
+    </header>
+
+    <div id="sidebar">
+        <ul>
+            <li onclick="location.href='./Home.html'"><a href="./Home.html"><i
+                        class="fas fa-home"></i><span>Home</span></a></li>
+            <li onclick="location.href='./Trending.html'"><a href="./Trending.html"><i class="fas fa-fire"></i><span>Trending</span></a></li>
+            <li onclick="location.href='library.html'"><a href="library.html"><i
+                        class="fas fa-book"></i><span>Library</span></a></li>
+            <li onclick="location.href='./Categories/index.html'"><a href="./Categories/index.html"><i
+                        class="fas fa-layer-group"></i><span>Categories</span></a></li>
+            <li onclick="location.href='profile.html'"><a href="profile.html"><i
+                        class="fas fa-user"></i><span>Profile</span></a></li>
+            <li onclick="location.href='Settings.html'"><a href="Settings.html"><i
+                        class="fas fa-cog"></i><span>Settings</span></a></li>
+            <li onclick="location.href='FaQ.html'"><a href="FaQ.html"><i
+                        class="fas fa-question-circle"></i><span>Q&A</span></a></li>
+            <li onclick="location.href='login.html'"><a href="login.html" id="logout"><i
+                        class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+        </ul>
+    </div>
+
+
+    </div>
+    <!-- main  section-->
+    <section class="hero">
+        <h2>Explore Thousands of Books at Your Fingertips</h2>
+        <p>Read online, download books, and discover new stories</p>
+        <button class="btn">Start Browsing</button>
+    </section>
+
+    <section class="books scroll-animation">
+        <h3>Most Read Books</h3>
+        <div class="book-list" id="most-read"></div>
+    </section>
+
+    <section class="books scroll-animation">
+        <h3>Latest Arrivals</h3>
+        <div class="book-list" id="latest-arrivals"></div>
+    </section>
+
+    <section class="books scroll-animation">
+        <h3>Most Read Books</h3>
+        <div class="book-list" id="most-read"></div>
+    </section>
+
+    <section class="books scroll-animation">
+        <h3>Latest Arrivals</h3>
+        <div class="book-list" id="latest-arrivals"></div>
+    </section>
+
+    <section class="books scroll-animation">
+        <h3>Categories</h3>
+        <div class="book-list" id="categories"></div>
+    </section>
+
+    <section class="books scroll-animation">
+        <h3>Recommended for You</h3>
+        <div class="book-list" id="recommended"></div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Digital Library. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <nav>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </nav>
+    </footer>
+
+    <script src="./Home.js"></script>
+</body>
+
+</html>
