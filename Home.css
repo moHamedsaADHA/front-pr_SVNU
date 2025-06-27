@@ -1,0 +1,526 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px;
+    background: url(./photos/home.jpg.webp) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+    margin-left: 60px;
+}
+
+/* الضبابيه */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 60px;
+    backdrop-filter: blur(10px);
+    /* التحكم في شدة الضبابية */
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+
+/* تخصيص عرض شريط التمرير */
+::-webkit-scrollbar {
+    width: 8px;
+    /* جعله أعرض قليلاً لمظهر أكثر فخامة */
+}
+
+/* تخصيص المسار (الخلفية) */
+::-webkit-scrollbar-track {
+    background: #3a2400;
+    /* بني غامق جدًا */
+    border-radius: 10px;
+    /* تدوير الحواف */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    /* إضافة ظل داخلي */
+}
+
+/* تخصيص الشريط المتحرك */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #e0ac69, #b57f50);
+    /* تدرج ذهبي أنيق */
+    border-radius: 10px;
+    /* تدوير الحواف */
+    box-shadow: 0 0 8px rgba(255, 223, 186, 0.5);
+    /* ظل ذهبي لإضفاء لمسة فاخرة */
+    transition: background 0.3s, box-shadow 0.3s;
+    /* تأثير ناعم عند التغيير */
+}
+
+/* تأثير عند تمرير الماوس فوقه */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #b57f50, #8f5e30);
+    /* لون أغمق قليلاً */
+    box-shadow: 0 0 12px rgba(255, 223, 186, 0.8);
+    /* تكبير الظل قليلاً */
+}
+
+/* تخصيص زوايا التمرير في الأسفل والأعلى */
+::-webkit-scrollbar-corner {
+    background: #3a2400;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #5e441d;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgb(114, 72, 17);
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#dynamic-text {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    border-right: 2px solid white;
+    /* يعطي شكل المؤشر */
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink 0.7s infinite;
+}
+
+#dynamic-text:hover {
+    color: #000000;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+#shopCar {
+    position: relative;
+
+    font-size: medium;
+}
+#shopCar:hover{
+    transform: scale(1.2);
+    color:rgb(255, 255, 255);
+}
+
+#search-icon {
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+#search-container {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+#search-box {
+    width: 0;
+    padding: 0;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+    background: white;
+    color: black;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-container.active #search-box {
+    width: 250px;
+    padding: 10px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 60px;
+    height: calc(100vh - 60px);
+    background: #5e441d;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+#sidebar:hover {
+    width: 200px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+#sidebar ul li:hover {
+    background: #3E2723;
+}
+
+#sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar ul li i {
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+#sidebar ul li i:hover {
+    color: chocolate;
+    transform: scale(1.2);
+}
+
+#sidebar ul li span {
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.3s ease, margin-left 0.3s;
+    margin-left: 0;
+}
+
+#sidebar:hover ul li span {
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.scroll-animation {
+    opacity: 0;
+    transform: translateX(-60px);
+    /* بدء التحريك من اليسار */
+    filter: blur(8px);
+    /* ضبابية بسيطة عند الاختفاء */
+    transition: opacity 1s ease-out, transform 1s ease-out, filter 1s ease-out;
+}
+
+.scroll-animation.active {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+}
+
+/* تأثير مختلف لعناصر تتحرك من اليمين */
+.scroll-animation.right {
+    transform: translateX(60px);
+}
+
+/* تأثير لعناصر تتحرك من الأسفل */
+.scroll-animation.bottom {
+    transform: translateY(60px);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgb(51, 40, 3);
+    border-radius: 10px;
+    margin: 100px auto;
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: white;
+    color: #4d3800bd;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #e0f2f1;
+}
+
+.books {
+    text-align: center;
+    padding: 100px 20px;
+    background: rgba(77, 44, 0, 0.952);
+    border-radius: 10px;
+    margin: 100px auto;
+    max-width: 800px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    opacity: 0;
+    /* البداية بخفاء */
+    transform: translateY(50px);
+    /* يبدأ متحركاً لأسفل */
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+footer.show {
+    opacity: 1;
+    transform: translateY(0);
+    /* الرجوع لمكانه الطبيعي */
+}
+
+footer.hide {
+    opacity: 0;
+    transform: translateY(50px);
+    /* يتحرك للأسفل مع الاختفاء */
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+footer nav a {
+    color: black;
+    /* اللون الأساسي */
+    text-decoration: none;
+    /* إزالة التسطير */
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    /* تأثيرات سلسة */
+    padding: 5px 10px;
+    /* تحسين التباعد */
+    display: inline-block;
+    /* لضمان تأثير الظل */
+}
+
+footer nav a:hover {
+    color: rgba(0, 188, 212, 0.8);
+    /* تغيير اللون عند مرور الماوس */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* إضافة ظل */
+    border-radius: 5px;
+    /* حواف ناعمة */
+}
+
+/* شاشات متوسطة (تابلت) */
+@media (max-width: 1024px) {
+    #sidebar {
+        width: 60px;
+    }
+}
+
+/* شاشات صغيرة (موبايل) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Sidebar يصبح أيقونات فقط على الشاشات الصغيرة */
+    @media (max-width: 768px) {
+        #sidebar {
+            width: 60px;
+            height: 100vh;
+            position: fixed;
+            /* تثبيت القائمة الجانبية */
+            left: 0;
+            top: 0;
+            background: rgba(94, 68, 29, 0.95);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+            transition: width 0.3s ease-in-out;
+            z-index: 1000;
+            /* ضمان أن القائمة تظهر فوق المحتوى */
+        }
+
+        #sidebar ul {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+
+        #sidebar ul li {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        #sidebar ul li a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        #sidebar ul li a span {
+            display: none;
+            /* إخفاء النصوص */
+        }
+
+        #sidebar:hover {
+            width: 180px;
+            /* عند المرور بالماوس يظهر النص */
+        }
+
+        #sidebar:hover ul li a span {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        .content {
+            margin-left: 60px;
+            /* يترك مساحة للـ sidebar */
+            width: calc(100% - 60px);
+            /* يأخذ باقي الشاشة */
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            transition: margin-left 0.3s ease-in-out;
+            padding: 10px;
+        }
+
+        #sidebar:hover~.content {
+            margin-left: 180px;
+        }
+    }
+
+    #sidebar:hover~.content {
+        margin-left: 180px;
+    }
+
+    .books {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .books .card {
+        width: 100%;
+        margin: 10px auto;
+        padding: 12px;
+        text-align: center;
+        background: rgba(94, 68, 29, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+        position: relative;
+        padding: 8px;
+    }
+
+    @media (max-width: 480px) {
+        header {
+            padding: 6px;
+        }
+
+        header h1 {
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .hero h2,
+        .books h2 {
+            font-size: 18px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .hero p,
+        .books p {
+            font-size: 14px;
+        }
+
+        .books .card {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+    }
+}

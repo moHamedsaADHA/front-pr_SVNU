@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RFOUF FAQ</title>
+    <link rel="icon" href="fav.ico" type="image/png">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        window.onscroll = function () {
+            let btn = document.getElementById("goUpBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+        function goToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="goToTop()" id="goUpBtn">↑ Go up</button>
+
+    <div id="sidebar">
+        <ul>
+            <li onclick="location.href='./Home.html'"><a href="./Home.html"><i
+                        class="fas fa-home"></i><span>Home</span></a></li>
+            <li onclick="location.href='./Trending.html'"><a href="./Trending.html"><i class="fas fa-fire"></i><span>Trending</span></a></li>
+            <li onclick="location.href='library.html'"><a href="library.html"><i
+                        class="fas fa-book"></i><span>Library</span></a></li>
+            <li onclick="location.href='./Categories/index.html'"><a href="./Categories/index.html"><i
+                        class="fas fa-layer-group"></i><span>Categories</span></a></li>
+            <li onclick="location.href='profile.html'"><a href="profile.html"><i
+                        class="fas fa-user"></i><span>Profile</span></a></li>
+            <li onclick="location.href='Settings.html'"><a href="Settings.html"><i
+                        class="fas fa-cog"></i><span>Settings</span></a></li>
+            <li onclick="location.href='FaQ.html'"><a href="FaQ.html"><i
+                        class="fas fa-question-circle"></i><span>Q&A</span></a></li>
+            <li onclick="location.href='login.html'"><a href="login.html" id="logout"><i
+                        class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+        </ul>
+    </div>
+
+    <h1>RFOUF FAQ</h1>
+    <p>This FAQ provides answers to basic questions about RFOUF.
+        <br>Use our
+        <a href="https://tawk.to/chat/67f7c96c937b6d191133f98b/1iofulkj2">Contect Us</a>
+        for more technical information.
+    </p>
+    <hr>
+    <p>RFOUF keeps evolving and adding new features, so this document may contain outdated information. We expect to
+        finish updating the FAQ, Bot Manuals, and other documents within a few months.</p>
+    <hr>
+    <div id="index_page">
+        <p></p>
+        <p>
+            <a href="#general_question">
+                <strong>General</strong>
+            </a>
+        </p>
+        <ul class="lists">
+            <li>
+                <a href="#general_question_1">What is a digital library?</a>
+            </li>
+            <li>
+                <a href="#general_question_2">What was the first digital library created?</a>
+            </li>
+            <li>
+                <a href="#general_question_3">What distinguishes a digital library from a regular library?</a>
+            </li>
+        </ul>
+
+        <p>
+            <a href="#library_question">
+                <strong>About Library</strong>
+            </a>
+        </p>
+        <ul class="lists">
+            <li>
+                <a href="#library_question_1">Is using the digital library free?</a>
+            </li>
+            <li>
+                <a href="#library_question_2">Can I use the digital library for free?</a>
+            </li>
+            <li>
+                <a href="#library_question_3">Do you need to register an account to benefit from the library's
+                    services?</a>
+            </li>
+        </ul>
+
+        <p>
+            <a href="#account_question">
+                <strong>Your Account</strong>
+            </a>
+        </p>
+        <ul class="lists">
+            <li>
+                <a href="#account_question_1">How do I create a new account? </a>
+            </li>
+            <li>
+                <a href="#account_question_2">Forgot my password, what should I do?</a>
+            </li>
+            <li>
+                <a href="#account_question_3">Can I edit my personal statements after registration?</a>
+            </li>
+            <li>
+                <a href="#account_question_4">Are there paid subscriptions and what benefits you provide?</a>
+            </li>
+            <li>
+                <a href="#account_question_5">How do I update my account information?</a>
+            </li>
+        </ul>
+
+        <p>
+            <a href="#books_question">
+                <strong>Books and Reading</strong>
+            </a>
+        </p>
+        <ul class="lists">
+            <li>
+                <a href="#books_question_1">Can I download books or just read them online?</a>
+            </li>
+            <li>
+                <a href="#books_question_2">How do I search for a specific book?</a>
+            </li>
+            <li>
+                <a href="#books_question_3">Can I save books for later reading?</a>
+            </li>
+            <li>
+                <a href="#books_question_4">Do you offer books in different formats, such as PDF and EPUB?</a>
+            </li>
+            <li>
+                <a href="#books_question_5">How can I save books for later reading?</a>
+            </li>
+            <li>
+                <a href="#books_question_6">Can I suggest adding a new book to the library?</a>
+            </li>
+        </ul>
+
+        <p>
+            <a href="#technical_question">
+                <strong>Technical problems</strong>
+            </a>
+        </p>
+        <ul class="lists">
+            <li>
+                <a href="#technical_question_1">What should I do if I have trouble downloading or reading a book?</a>
+            </li>
+            <li>
+                <a href="#technical_question_2">What browsers and devices support the digital library?</a>
+            </li>
+            <li>
+                <a href="#technical_question_3">How can I report an error or issue on the website?</a>
+            </li>
+            <li>
+                <a href="#technical_question_4">Why can't I open some books?</a>
+            </li>
+            <li>
+                <a href="#technical_question_5">The website isn't working. What should I do?</a>
+            </li>
+        </ul>
+
+        <p>
+            <a href="#copyright_question">
+                <strong>Copyright</strong>
+            </a>
+        </p>
+        <ul class="lists">
+            <li><a href="#copyright_question_1">Can I share books with others?</a></li>
+            <li><a href="#copyright_question_2">Can I print books from the digital library?</a></li>
+            <li><a href="#copyright_question_3">Are all available books legal and available for download?</a></li>
+            <li><a href="#copyright_question_4">How is copyright handled?</a></li>
+            <li><a href="#copyright_question_5">What should I do if I find a book that violates intellectual property
+                    rights?</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div id="content_page">
+        <div class="paragraphs">
+            <h3 id="general_question">General Questions</h3>
+            <h4 id="general_question_1">Q: What is a digital library?</h4>
+            <p>A digital library is an online platform that provides access to a collection of digital books, articles,
+                and other resources that can be read or downloaded electronically.</p>
+            <h4 id="general_question_2">Q: What was the first digital library created?</h4>
+            <p>The first digital library is considered to be Project Gutenberg, launched in 1971, aiming to make
+                literary works freely available in digital format. </p>
+            <h4 id="general_question_3">Q: What distinguishes a digital library from a regular library?</h4>
+            <p>A digital library is accessible online anytime and anywhere, doesn't require physical space, and often
+                offers search features and formats like PDF or EPUB. Regular libraries rely on physical books and
+                in-person visits. </p>
+        </div>
+
+        <div class="paragraphs">
+            <h3 id="library_question">About Library</h3>
+            <h4 id="library_question_1">Q: Is using the digital library free?</h4>
+            <p>Yes, there are free books, but there may be some paid content or content that requires login.</p>
+            <h4 id="library_question_2">Q: Can I use the digital library for free?</h4>
+            <p>Absolutely. Many of our books and features are available without charge.
+            </p>
+            <h4 id="library_question_3">Q: Do you need to register an account to benefit from the library's services?
+            </h4>
+            <p> While some features are accessible without an account, registering allows you to save books, create
+                reading lists, and access personalized recommendations.</p>
+        </div>
+
+        <div class="paragraphs">
+            <h3 id="account_question">Your Account</h3>
+            <h4 id="account_question_1">Q: How do I create a new account?</h4>
+            <p>Click on the "Sign Up" button On the side of the page, then fill in your details and follow the
+                instructions.</p>
+            <h4 id="account_question_2">Q: Forgot my password, what should I do?</h4>
+            <p>Click on "Forgot Password?" on the login page and follow the steps to reset your password via email.</p>
+            <h4 id="account_question_3">Q: Can I edit my personal statements after registration?</h4>
+            <p>Yes, you can update your profile information anytime from your account settings.</p>
+            <h4 id="account_question_4">Q: Are there paid subscriptions and what benefits you provide?</h4>
+            <p>Yes, we offer premium subscriptions that include early access to new books, ad-free reading, and
+                exclusive content.</p>
+            <h4 id="account_question_5">Q: How do I update my account information?</h4>
+            <p>Go to your profile settings and click "Edit" to change your personal details.</p>
+        </div>
+
+        <div class="paragraphs">
+            <h3 id="books_question">Books and Reading</h3>
+            <h4 id="books_question_1">Q: Can I download books or just read them online?</h4>
+            <p>Some books are available for download, while others can be read online only, depending on the licensing.
+            </p>
+            <h4 id="books_question_2">Q: How do I search for a specific book?</h4>
+            <p>Use the search bar at the top of the site. You can filter results by title, author, or genre.</p>
+            <h4 id="books_question_3">Q: Can I save books for later reading</h4>
+            <p>Yes, just click the "Save" or "Add to Reading List" button on any book page.</p>
+            <h4 id="books_question_4">Q: Do you offer books in different formats, such as PDF and EPUB?</h4>
+            <p>Yes, many books are available in multiple formats like PDF, EPUB, and sometimes audio.</p>
+            <h4 id="books_question_5">Q: How can I save books for later reading?</h4>
+            <p>You can add them to your personal reading list by clicking the bookmark icon or "Save" button.</p>
+            <h4 id="books_question_6">Q: Can I suggest adding a new book to the library?</h4>
+            <p>Yes, we welcome suggestions. Use the "Suggest a Book" form in the contact section.</p>
+        </div>
+
+        <div class="paragraphs">
+            <h3 id="technical_question">Technical problems</h3>
+            <h4 id="technical_question_1">Q: What should I do if I have trouble downloading or reading a book?</h4>
+            <p>First, try refreshing the page or using another browser. If the issue persists, contact support.</p>
+            <h4 id="technical_question_2">Q: What browsers and devices support the digital library?</h4>
+            <p>The library works best on modern browsers like Chrome, Firefox, Edge, and Safari, and is compatible with
+                desktops, tablets, and smartphones.</p>
+            <h4 id="technical_question_3">Q: How can I report an error or issue on the website?</h4>
+            <p>Use the “contact support” form at the bottom of the page or contact us via email.</p>
+            <h4 id="technical_question_4">Q: Why can't I open some books?</h4>
+            <p>Some books might be restricted due to licensing or require a premium subscription to access.</p>
+            <h4 id="technical_question_5">Q: The website isn't working. What should I do?</h4>
+            <p>Check your internet connection, clear your browser cache, or try again later. If the issue continues,
+                contact technical support.</p>
+        </div>
+
+        <div class="paragraphs">
+            <h3 id="copyright_question">Copyright</h3>
+            <h4 id="copyright_question_1">Q: Can I share books with others?</h4>
+            <p>Books from the public domain can be shared, but copyrighted materials should not be distributed without
+                permission.</p>
+            <h4 id="copyright_question_2">Q: Can I print books from the digital library?</h4>
+            <p>Printing is allowed only for books that have print rights enabled. Please check the book's page for
+                permissions.</p>
+            <h4 id="copyright_question_3">Q: Are all available books legal and available for download?</h4>
+            <p>Yes, we ensure that all content on the site respects copyright laws.</p>
+            <h4 id="copyright_question_4">Q: How is copyright handled?</h4>
+            <p>We comply with intellectual property regulations and only host or link to legally authorized content.</p>
+            <h4 id="copyright_question_5">Q: What should I do if I find a book that violates intellectual property
+                rights?</h4>
+            <p>Please report it immediately through our "connect us" form. We take such concerns seriously.</p>
+        </div>
+    </div>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67f7c96c937b6d191133f98b/1iofulkj2';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
