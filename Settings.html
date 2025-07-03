@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Settings </title>
+  <link rel="stylesheet" href="settings.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #3a2400;
+      border-radius: 10px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #e0ac69, #b57f50);
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(255, 223, 186, 0.5);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #b57f50, #8f5e30);
+      box-shadow: 0 0 12px rgba(255, 223, 186, 0.8);
+    }
+
+    ::-webkit-scrollbar-corner {
+      background: #3a2400;
+    }
+
+    #auto-sync {
+      color: red;
+    }
+
+    #auto-sync.active {
+      color: white;
+    }
+
+    #sidebar {
+      width: 250px;
+      height: 100vh;
+      background: #2c3e50;
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding-top: 20px;
+    }
+
+    #sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #sidebar ul li {
+      padding: 15px;
+      text-align: left;
+    }
+
+    #sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    #sidebar ul li i {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="sidebar">
+    <ul>
+        <li onclick="location.href='./Home.html'"><a href="./Home.html"><i
+                    class="fas fa-home"></i><span>Home</span></a></li>
+        <li onclick="location.href='Trending.html'"><a href="Trending.html"><i class="fas fa-fire"></i><span>Trending</span></a></li>
+        <li onclick="location.href='library.html'"><a href="library.html"><i
+                    class="fas fa-book"></i><span>Library</span></a></li>
+        <li onclick="location.href='./Categories/index.html'"><a href="./Categories/index.html"><i
+                    class="fas fa-layer-group"></i><span>Categories</span></a></li>
+        <li onclick="location.href='profile.html'"><a href="profile.html"><i
+                    class="fas fa-user"></i><span>Profile</span></a></li>
+        <li onclick="location.href='Settings.html'"><a href="Settings.html"><i
+                    class="fas fa-cog"></i><span>Settings</span></a></li>
+        <li onclick="location.href='FaQ.html'"><a href="FaQ.html"><i
+                    class="fas fa-question-circle"></i><span>Q&A</span></a></li>
+
+        <li onclick="location.href='login.html'"><a href="login.html" id="logout"><i
+                    class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+    </ul>
+</div>
+
+  <div class="settings-container" style="margin-left: 260px">
+    <h2>Settings</h2>
+    <div class="setting">
+      <label for="theme">Theme</label>
+      <select id="theme">
+        <option>Light</option>
+        <option>Dark</option>
+      </select>
+    </div>
+    <div class="setting">
+      <label>Notifications</label>
+      <i id="notification-bell" class="fas fa-bell"></i>
+    </div>
+    <div class="setting">
+      <label for="font-size">Font Size</label>
+      <select id="font-size">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select>
+    </div>
+    <div class="setting">
+      <label for="language">Language</label>
+      <select id="language">
+        <option>English</option>
+        <option>Arabic</option>
+      </select>
+    </div>
+    <div class="setting">
+      <label for="reading-mode">Reading Mode</label>
+      <select id="reading-mode">
+        <option>Standard</option>
+        <option>Night Mode</option>
+        <option>Sepia</option>
+      </select>
+    </div>
+    <div class="setting">
+      <label>Auto-Sync Reading Progress</label>
+      <i id="auto-sync" class="fas fa-sync-alt toggle-icon"></i>
+    </div>
+    <div class="setting">
+      <label>Privacy Mode</label>
+      <i id="privacy-mode" class="fas fa-user-secret toggle-icon"></i>
+    </div>
+    <button>Save Settings</button>
+  </div>
+
+  <footer class="footer" style="margin-left: 260px">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Help</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="settings.js"></script>
+</body>
+
+</html>

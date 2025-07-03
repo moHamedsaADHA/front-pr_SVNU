@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="icon" type="image/png" href="./photos/fav.ico">
+  <script defer src="profile.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="sidebar">
+    <ul>
+        <li onclick="location.href='./Home.html'"><a href="./Home.html"><i
+                    class="fas fa-home"></i><span>Home</span></a></li>
+        <li onclick="location.href='./Trending.html'"><a href="./Trending.html"><i class="fas fa-fire"></i><span>Trending</span></a></li>
+        <li onclick="location.href='library.html'"><a href="library.html"><i
+                    class="fas fa-book"></i><span>Library</span></a></li>
+        <li onclick="location.href='./Categories/index.html'"><a href="./Categories/index.html"><i
+                    class="fas fa-layer-group"></i><span>Categories</span></a></li>
+        <li onclick="location.href='profile.html'"><a href="profile.html"><i
+                    class="fas fa-user"></i><span>Profile</span></a></li>
+        <li onclick="location.href='Settings.html'"><a href="Settings.html"><i
+                    class="fas fa-cog"></i><span>Settings</span></a></li>
+        <li onclick="location.href='FaQ.html'"><a href="FaQ.html"><i
+                    class="fas fa-question-circle"></i><span>Q&A</span></a></li>
+        <li onclick="location.href='login.html'"><a href="login.html" id="logout"><i
+                    class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+    </ul>
+</div>
+
+  <div class="content">
+    <div class="user-info">
+      <label for="profile-upload" class="upload-label">
+        <i class="fas fa-camera"></i> تغيير الصورة
+      </label>
+      <input type="file" id="profile-upload" accept="image/*" style="display:none">
+      <h2 class="user-name">Mostafa Mahmoud</h2>
+      <p class="user-email">mostfamm120@gmail.com</p>
+    </div>
+
+    <div class="user">
+      <div class="box-info">
+        <h3>الكتب المقروءة</h3>
+        <p>27</p>
+      </div>
+      <div class="box-info">
+        <h3>المفضلة</h3>
+        <p>14</p>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>© 2025 Digital Library. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <nav>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </nav>
+  </footer>
+</body>
+
+</html>

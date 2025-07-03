@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1 id="dynamic-text">Trending</h1>
+        <div class="search-bar">
+          <input type="text" placeholder="Search For Book...">
+            <button>
+             <img src="https://img.icons8.com/ios-filled/50/000000/search--v1.png" alt="search">
+            </button>
+        </div>
+         <!-- دايرة الأعلام -->
+  <div class="flag-container">
+    <div class="flag-toggle">🌍</div>
+    <div class="flag-menu">
+
+      <a href="Egypt.html">
+        <img src="https://flagcdn.com/w40/eg.png" alt="Egypt">
+    </a>
+  <a href="America.html">
+    <img src="https://flagcdn.com/w40/us.png" alt="America">
+  </a>
+  <a href="France.html">
+    <img src="https://flagcdn.com/w40/fr.png" alt="France">
+  </a>
+  <a href="Germany.html">
+    <img src="https://flagcdn.com/w40/de.png" alt="Germany">
+  </a>
+    </div>
+    </header>
+  <div id="trigger"></div>
+  <div id="sidebar">
+    <ul>
+        <li onclick="location.href='./Home.html'"><a href="./Home.html"><i
+                    class="fas fa-home"></i><span>Home</span></a></li>
+        <li onclick="location.href='./Trending.html'"><a href="./Trending.html"><i class="fas fa-fire"></i><span>Trending</span></a></li>
+        <li onclick="location.href='library.html'"><a href="library.html"><i
+                    class="fas fa-book"></i><span>Library</span></a></li>
+        <li onclick="location.href='./Categories/index.html'"><a href="./Categories/index.html"><i
+                    class="fas fa-layer-group"></i><span>Categories</span></a></li>
+        <li onclick="location.href='profile.html'"><a href="profile.html"><i
+                    class="fas fa-user"></i><span>Profile</span></a></li>
+        <li onclick="location.href='Settings.html'"><a href="Settings.html"><i
+                    class="fas fa-cog"></i><span>Settings</span></a></li>
+        <li onclick="location.href='FaQ.html'"><a href="FaQ.html"><i
+                    class="fas fa-question-circle"></i><span>Q&A</span></a></li>
+        <li onclick="location.href='login.html'"><a href="login.html" id="logout"><i
+                    class="fas fa-sign-out-alt"></i><span>Logout</span></a></li>
+    </ul>
+</div>
+  <main>
+    <div class="book-grid">
+      
+      <div class="book-card">
+  <div class="book-image-container">
+    <a  href="https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird" target="_blank">
+      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657.jpg" alt="غلاف كتاب فن الحرب" class="book-image">
+    </a>
+  </div>
+  <div class="book-info">
+    <h3 class="book-title">To Kill a Mockingbird</h3>
+    <p class="book-author">Harper Lee</p>
+    <div class="book-rating">
+      <div class="stars-container">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star empty">★</span>
+      </div>
+      <span class="rating-number">4.26</span>
+    </div>
+  </div>
+      </div>
+      
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/5470.1984" target="_blank">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348990566i/5470.jpg" alt="التاريخ الإسلامي" class="book-image">
+          </a>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">1984</h3>
+          <p class="book-author">George Orwell</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star half-filled">★</span>
+            </div>
+            <span class="rating-number">4.20</span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/1885.Pride_and_Prejudice" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1320399351i/1885.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+          
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Pride and Prejudice</h3>
+          <p class="book-author">Jane Austen</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star empty">★</span>
+              <span class="star empty">★</span>
+            </div>
+            <span class="rating-number">4.26</span>
+          </div>
+        </div>
+      </div>
+   
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/4671.The_Great_Gatsby" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1738790966i/4671.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">The Great Gatsby</h3>
+          <p class="book-author">F. Scott Fitzgerald</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">3.93</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/5107.The_Catcher_in_the_Rye" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">The Catcher in the Rye</h3>
+          <p class="book-author">J.D. Salinger</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">3.80</span>
+          </div>
+        </div>
+      </div>
+   
+       <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546071216i/5907.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">The Hobbit, or There and Back Again</h3>
+          <p class="book-author">J.R.R. Tolkien</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">4.29</span>
+          </div>
+        </div>
+      </div>
+    
+       <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/13079982-fahrenheit-451" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1383718290i/13079982.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">Fahrenheit 451</h3>
+          <p class="book-author">Ray Bradbury</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">3.97</span>
+          </div>
+        </div>
+      </div>
+  
+       <div class="book-card">
+          <div class="book-image-container">
+            <a href="https://www.goodreads.com/book/show/10210.Jane_Eyre" target="_blank">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1557343311i/10210.jpg" alt="أسس الفلسفة" class="book-image">
+            </a>
+        </div>
+          <div class="book-info">
+            <h3 class="book-title">Jane Eyre</h3>
+            <p class="book-author">Charlotte Brontë</p>
+            <div class="book-rating">
+              <div class="stars-container">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+              <span class="rating-number">4.15</span>
+            </div>
+          </div>
+        </div>
+      <div class="book-card">
+  <div class="book-image-container">
+    <a  href="https://www.goodreads.com/book/show/7613.Animal_Farm" target="_blank">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1424037542i/7613.jpg" alt="غلاف كتاب فن الحرب" class="book-image">
+    </a>
+  </div>
+  <div class="book-info">
+    <h3 class="book-title">Animal Farm</h3>
+    <p class="book-author">George Orwell</p>
+    <div class="book-rating">
+      <div class="stars-container">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star empty">★</span>
+      </div>
+      <span class="rating-number">4.00</span>
+    </div>
+  </div>
+      </div>
+ 
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings" target="_blank">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1566425108i/33.jpg" alt="التاريخ الإسلامي" class="book-image">
+          </a>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">The Lord of the Rings</h3>
+          <p class="book-author">J.R.R. Tolkien</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star half-filled">★</span>
+            </div>
+            <span class="rating-number">4.54</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/19063.The_Book_Thief" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1522157426i/19063.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+          
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">The Book Thief</h3>
+          <p class="book-author">Markus Zusak</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star empty">★</span>
+              <span class="star empty">★</span>
+            </div>
+            <span class="rating-number">4.39</span>
+          </div>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/6185.Wuthering_Heights" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388212715i/6185.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Wuthering Heights</h3>
+          <p class="book-author">Emily Brontë</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">3.90</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/11127.The_Chronicles_of_Narnia" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661032875i/11127.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">The Chronicles of Narnia</h3>
+          <p class="book-author">C.S. Lewis</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">4.28</span>
+          </div>
+        </div>
+      </div>
+
+       <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/5129.Brave_New_World" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1575509280i/5129.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">Brave New World</h3>
+          <p class="book-author">Aldous Huxley</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">3.99</span>
+          </div>
+        </div>
+      </div>
+      
+       <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/77203.The_Kite_Runner" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1579036753i/77203.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">The Kite Runner</h3>
+          <p class="book-author">Khaled Hosseini	</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">4.30</span>
+          </div>
+        </div>
+      </div>
+   
+      <div class="book-card">
+  <div class="book-image-container">
+    <a  href="https://www.goodreads.com/book/show/865.The_Alchemist" target="_blank">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1483412266i/865.jpg" alt="غلاف كتاب فن الحرب" class="book-image">
+    </a>
+  </div>
+  <div class="book-info">
+    <h3 class="book-title">The Alchemist</h3>
+    <p class="book-author">Paulo Coelho	</p>
+    <div class="book-rating">
+      <div class="stars-container">
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star filled">★</span>
+        <span class="star empty">★</span>
+      </div>
+      <span class="rating-number">3ز92</span>
+    </div>
+  </div>
+      </div>
+    
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/24280.Les_Mis_rables" target="_blank">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1411852091i/24280.jpg" alt="التاريخ الإسلامي" class="book-image">
+          </a>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Les Misérables</h3>
+          <p class="book-author">Victor Hugo</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star half-filled">★</span>
+            </div>
+            <span class="rating-number">4.21</span>
+          </div>
+        </div>
+      </div>
+     
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/153747.Moby_Dick_or_The_Whale" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327940656i/153747.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+          
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Moby-Dick or, The Whale</h3>
+          <p class="book-author">Herman Melville	</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star empty">★</span>
+              <span class="star empty">★</span>
+            </div>
+            <span class="rating-number">3ز56</span>
+          </div>
+        </div>
+      </div>
+     
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/7144.Crime_and_Punishment" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1382846449i/7144.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+        </div>
+        <div class="book-info">
+          <h3 class="book-title">Crime and Punishment</h3>
+          <p class="book-author">Fyodor Dostoevsky</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">4.28</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/1381.The_Odyssey" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1711957706i/1381.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">The Odyssey</h3>
+          <p class="book-author">Homer	</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">3.82</span>
+          </div>
+        </div>
+      </div>
+      
+       <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/5907.The_Hobbit_or_There_and_Back_Again" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1427728126i/4934.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">The Brothers Karamazov</h3>
+          <p class="book-author">Fyodor Dostoevsky</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">4.38</span>
+          </div>
+        </div>
+      </div>
+      
+       <div class="book-card">
+        <div class="book-image-container">
+          <a href="https://www.goodreads.com/book/show/5297.The_Picture_of_Dorian_Gray" target="_blank">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1546103428i/5297.jpg" alt="أسس الفلسفة" class="book-image">
+          </a>
+      </div>
+        <div class="book-info">
+          <h3 class="book-title">The Picture of Dorian Gray</h3>
+          <p class="book-author">Oscar Wilde</p>
+          <div class="book-rating">
+            <div class="stars-container">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <span class="rating-number">3.14</span>
+          </div>
+        </div>
+      </div>
+      
+       <div class="book-card">
+          <div class="book-image-container">
+            <a href="https://www.goodreads.com/book/show/17245.Dracula" target="_blank">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1387151694i/17245.jpg" alt="أسس الفلسفة" class="book-image">
+            </a>
+        </div>
+          <div class="book-info">
+            <h3 class="book-title">Dracula</h3>
+            <p class="book-author">Bram Stoker	</p>
+            <div class="book-rating">
+              <div class="stars-container">
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+                <span class="star filled">★</span>
+              </div>
+              <span class="rating-number">4.02</span>
+            </div>
+          </div>
+        </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-heading">Digital Library</h3>
+          <p class="footer-description">Your favorite site to explore new books and classics in various fields.</p>
+        </div>
+        
+        <div class="footer-column">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <!-- <li><a href="#" class="footer-link">Home</a></li> -->
+            <li><a href="#" class="footer-link">Browse books</a></li>
+            <li><a href="#" class="footer-link">Special Offers</a></li>
+            <li><a href="#" class="footer-link">Contact us</a></li>
+          </ul>
+        </div>   
+        <div class="footer-column">
+          <h3 class="footer-heading">Follow us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon">
+              <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon">
+              <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+          
+          <div class="newsletter">
+            <form class="newsletter-form">
+              <input type="email" class="newsletter-input" placeholder="Newsletter Email">
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>   
+      <div class="copyright">
+        <p>© 2025 Digital Library - All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

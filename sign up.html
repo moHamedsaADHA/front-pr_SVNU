@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <!-- add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./sign up.css">
+    <link rel="icon" type="image/png" href="./photos/lock.ico">
+
+</head>
+
+<body>
+
+    <div class="glass-container">
+        <div class="login-box">
+            <h2>Sign up </h2>
+            <form action="#" method="POST">
+
+                <input type="email" id="Email" name="Email" required placeholder="alpha@examble.com">
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                <span id="error-message" style="color: red; display: none;"></span>
+                <input type="text" id="username" name="username" required placeholder="Username">
+
+
+                <input type="password" id="password" name="password" required placeholder="Password">
+
+                <div class="options">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+
+
+                <button type="submit" id="signupbutton" href="./login.html">Sign up</button>
+
+                <p>you have an account? <a href="./login.html" id="login">login</a></p>
+
+                <footer class="footer">
+                    <div class="footer-content">
+                        <div class="footer-links">
+                            <a href="#">Help</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <p>© 2025 Digital Library. All rights reserved.</p>
+                    </div>
+                </footer>
+
+                <script src="./sign up.js"></script>
+
+</body>
+
+</html>
